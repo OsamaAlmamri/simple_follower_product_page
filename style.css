@@ -1,0 +1,474 @@
+body{
+    background: #ffd3f4;
+}
+
+.body {
+    background-color: #ffffffad;
+    font-family: sans-serif;
+    width: 80%;
+    overflow: auto;
+    /*padding: 5px;*/
+    margin-left: 8%;
+    /*
+    background-image: url(_n.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;*/
+}
+.bar
+{
+    display: none;
+}
+nav {
+    background-color:#fc68d7;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0 8%;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px)
+
+{
+    .bar
+    {
+        display: block;
+    }
+
+    #nav_ul
+    {
+        /*display: none;*/
+    }
+    nav ul li {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #fff1fb;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+
+    nav ul li:hover {
+        background-color: #ffd3f4;
+        color: black;
+        padding: 10px;
+        transition-duration: .5s;
+
+    }
+
+}
+
+
+@media only screen and (min-width: 992px) {
+    nav ul li a:hover {
+        background-color: #ffd3f4;
+        color: black;
+        padding: 30px;
+        transition-duration: .5s;
+
+    }
+}
+
+
+nav ul li a:active {
+    color: #b9095b;
+}
+
+
+
+nav ul .home ul {
+    display: none;
+}
+
+nav ul .home:hover {
+    display: block;
+    margin: 100px;
+}
+
+.product-list {
+
+    position: relative;
+    display: block;
+    margin: 1% 0 0 2%;
+    width: 90%;
+    list-style: none;
+}
+
+
+.logo
+{
+    /*width: 100%;*/
+    /*padding: 5px;*/
+    /*margin: 0 8%;*/
+    position: relative;
+    width: 84%;
+    object-fit: cover;
+    height: 300px;
+    margin: 12px 0 0 8%;
+
+
+}.logo_image
+{
+     width: 100%;
+     object-fit: cover;
+     height: 300px;
+}
+ .logo_text
+ {
+     position: absolute;
+     background: #ffd3f470;
+     display: block;
+     width: 100%;
+     height: 70%;
+     text-align: center;
+     font-size: 9vw;
+     top: 15%;
+
+ }
+ .allPage
+ {
+     /*width: 80%;*/
+     /*padding: 5px;*/
+     /*margin: 0 8%;*/
+ }
+
+.product-item {
+    position: relative;
+    text-align: center;
+    display: block;
+    float: left;
+    margin-left: 10px;
+    /*margin-bottom: 10px;*/
+
+
+    /*position: relative;*/
+    /*box-sizing: border-box;*/
+    /*width: 100%;*/
+    /*height: 0;*/
+    /*display: block;*/
+    /*padding: 0;*/
+    /*overflow: hidden;*/
+
+
+}
+
+/*.product-item-div*/
+/*{*/
+
+
+
+    /*box-sizing: border-box;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*border: 0;*/
+/*}*/
+
+
+.product-item:hover{
+   /*border: 1px solid royalblue;*/
+    box-shadow: royalblue;
+    /*background-color: #d4a200;*/
+    color: black;
+    /*padding: 2px;*/
+    cursor: hand;
+    /*height: 350px;*/
+    /*transition-duration: .5s;*/
+
+}
+
+.product-image
+{
+    width: 90%;
+}
+.product-title {
+    font-size: 1vw;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .product-item {
+        width: 98%;
+        /*height: 520px;*/
+        margin-left: -10%;
+
+
+    }
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .product-item {
+        width: 47%;
+        height: 380px;
+
+
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    .product-item {
+        width: 31%;
+        height: 370px;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .product-item {
+        width: 31%;
+        height: 423px;
+
+
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .product-item {
+        width: 23%;
+        height: 460px;
+
+    }
+}
+
+
+.product-detail
+{
+    background: #fc68d7;
+    padding: 10px;
+    color: white;
+    font-size: 2vw;
+    width: 100%;
+    display: none;
+    text-transform: uppercase;
+}
+
+.product-prise,.product-title
+{
+    font-size: 2vw;
+
+}
+footer
+{
+    position: relative;
+    clear: both;
+    display: block;
+    width: 100%;
+    background: #fc68d7;
+    height: 62px;
+    text-align: center;
+    font-size: 2vw;
+}
+
+footer p{
+    position: absolute;
+    margin-top: 11px;
+    text-align: center;
+    margin-left: 29%;
+}
+
+
+
+
+.image_selected {
+    position: absolute;
+    width: 192px;
+    top: 22px;
+    left: 30px;
+    visibility: hidden;
+}
+
+.image_selected_active
+{
+    visibility:visible;
+}
+
+
+
+.shopping-cart {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px 0 0;
+}
+
+@media (max-width: 765px) {
+
+    .shopping-cart {
+        float: right;
+        padding-right: 25px;
+    }
+
+}
+
+
+
+
+
+
+.section_card {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.cart {
+    font-size: 68px;
+}
+
+
+
+/****model**/
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 40rem;
+    border-radius: 0.5rem;
+}
+.close-button {
+    float: left;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: #f80300;
+}
+.close-button:hover {
+    background-color: darkgray;
+}
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+/****model**/
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    /*border-radius: 5px;*/
+    /*background-color: #f2f2f2;*/
+    /*padding: 20px;*/
+
+
+    width: 100%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    /*padding: 20px;*/
+    /*margin-left: 25%;*/
+}
+
+
+.col-25 {
+    float: left;
+    width: 23%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+.col-50 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+}
+.col-33 {
+    float: left;
+    width: 33%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
